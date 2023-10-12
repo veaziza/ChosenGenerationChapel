@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>House Fellowship</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #7f817c;
+        }
+
+        header {
+            background-color: #dc0cb6;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+
+        nav {
+            background-color: #0a1086;
+            text-align: center;
+            padding: 10px;
+        }
+
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            margin: 10px;
+        }
+
+        .center-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            padding: 10px;
+        }
+
+        .center-card {
+            background-color: #2d84d6;
+            border-radius: 2px;
+            box-shadow: 0 2px 55px rgba(242, 240, 240, 0.2);
+            margin: 10px;
+            padding: 10px;
+            flex-basis: calc(33.333% - 90px);
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>House Fellowship</h1>
+    </header>
+
+    <h2>Monthly every third Sunday</h2>
+    <div class="center-container">
+        <div class="center-card">
+            <h2>Katy</h2>
+          <p>5703 Round Robin Drive</p>
+          <p>Katy, TX 77449</p>
+            <button onclick="learnMore('Center 1')">Click for direction</button>
+            
+        </div>
+
+        <div class="center-card">
+            <h2>Richmond</h2>
+          <p>20226 Rainflower Bay</p>
+          <p>Richmond, TX 77407</p>
+            <button onclick="learnMore('Center 2')">Click for direction</button>
+        </div>
+        <div class="center-card">
+            <h2>Houston</h2>
+          <p>7526 Autumn Sun Drive</p>
+          <p>Houston, TX 77083</p>
+            <button onclick="learnMore('Center 3')">Click for direction</button>
+        </div>
+    </div>
+
+    <script>
+        function learnMore(centerName) {
+            alert(`Learn more about ${centerName}`);
+        }
+    </script>
+</body>
+</html>
